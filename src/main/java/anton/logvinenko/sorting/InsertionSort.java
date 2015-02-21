@@ -4,7 +4,7 @@ package anton.logvinenko.sorting;
  * Array: [[0] [1 2 3 4 5]]
  * <p>
  * Take the leftmost element E in the second partition,
- * find its place in the first partition.
+ * swap elements to find its place in the first partition.
  * <p>
  * Shrink the second partition from the left side, repeat.
  */
