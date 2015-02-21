@@ -1,4 +1,10 @@
+#IntelliJ IDEA files
+.idea
+*.iml
+
+#Compilation output
 *.class
+target
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
