@@ -1,5 +1,14 @@
 package anton.logvinenko.sorting;
 
+/**
+ * Array: [[0] [1 2 3 4 5]]
+ *
+ * Find the smallest element E in the second partition,
+ * swap it with the last element L in the first partition
+ * if L > E
+ *
+ * Shrink the second partition from the right side, repeat.
+ */
 public class SelectionSort extends SortAlgorithm {
 
 	@Override
