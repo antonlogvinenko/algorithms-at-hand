@@ -1,6 +1,12 @@
 package anton.logvinenko.sorting;
 
-public interface SortAlgorithm {
+public abstract class SortAlgorithm {
 
-	void sort(int[] a);
+	public abstract void sort(int[] a);
+
+	protected void swap(int[] a, int i, int j) {
+		int c = a[i];
+		a[i] = a[j];
+		a[j] = c;
+	}
 }
