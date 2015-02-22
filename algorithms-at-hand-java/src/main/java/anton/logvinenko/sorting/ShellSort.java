@@ -17,7 +17,6 @@ public class ShellSort extends SortAlgorithm {
 		}
 
 		while (h > 0) {
-
 			for (int i = h; i < n; i += h) {
 				for (int j = i; j > 0 && a[j - 1] > a[j]; j--) {
 					swap(a, j - 1, j);
