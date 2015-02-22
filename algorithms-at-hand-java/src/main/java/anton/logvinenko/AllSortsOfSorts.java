@@ -2,6 +2,7 @@ package anton.logvinenko;
 
 import anton.logvinenko.sorting.InsertionSort;
 import anton.logvinenko.sorting.SelectionSort;
+import anton.logvinenko.sorting.ShellSort;
 import anton.logvinenko.sorting.SortAlgorithm;
 
 import java.util.ArrayList;
@@ -24,6 +25,7 @@ public class AllSortsOfSorts {
 	static {
 		sortsAlgorithms.add(InsertionSort.class);
 		sortsAlgorithms.add(SelectionSort.class);
+		sortsAlgorithms.add(ShellSort.class);
 	}
 
 	private static void print(int[] array) {
