@@ -1,10 +1,11 @@
 #IntelliJ IDEA files
-.idea
-*.iml
+algorithms-at-hand-java/.idea
+algorithms-at-hand-java/*.iml
 
 #Compilation output
 *.class
-target
+algorithms-at-hand-java/target
+algorithms-at-hand-haskell/dist
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
