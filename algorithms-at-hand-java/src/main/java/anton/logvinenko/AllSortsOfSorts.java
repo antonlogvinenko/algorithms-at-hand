@@ -29,7 +29,7 @@ public class AllSortsOfSorts {
 		sortsAlgorithms.add(BubbleSort.class);
 		sortsAlgorithms.add(QuickSort.class);
 		sortsAlgorithms.add(QuickSortShort.class);
-//		sortsAlgorithms.add(BubbleSortShort.class);
+		sortsAlgorithms.add(BubbleSortShort.class);
 	}
 
 	public static void print(int[] array) {
