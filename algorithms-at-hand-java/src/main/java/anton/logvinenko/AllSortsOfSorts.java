@@ -1,9 +1,6 @@
 package anton.logvinenko;
 
-import anton.logvinenko.sorting.InsertionSort;
-import anton.logvinenko.sorting.SelectionSort;
-import anton.logvinenko.sorting.ShellSort;
-import anton.logvinenko.sorting.SortAlgorithm;
+import anton.logvinenko.sorting.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,6 +23,8 @@ public class AllSortsOfSorts {
 		sortsAlgorithms.add(InsertionSort.class);
 		sortsAlgorithms.add(SelectionSort.class);
 		sortsAlgorithms.add(ShellSort.class);
+		sortsAlgorithms.add(BubbleSortOptimized.class);
+		sortsAlgorithms.add(BubbleSort.class);
 	}
 
 	private static void print(int[] array) {

@@ -1,3 +1,6 @@
+#OS X
+.DS_Store
+
 #IntelliJ IDEA files
 algorithms-at-hand-java/.idea
 algorithms-at-hand-java/*.iml
