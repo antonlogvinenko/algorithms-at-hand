@@ -31,7 +31,6 @@ public class QuickSort extends SortAlgorithm {
 			if (l < p - 1) {
 				stack[++top] = p - 1;
 			}
-
 			if (p + 1 < h) {
 				stack[++top] = h;
 			}
