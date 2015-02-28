@@ -27,13 +27,10 @@ public class QuickSort extends SortAlgorithm {
 			int l = top == -1 ? 0 : stack[top];
 
 			int p = partition(a, l, h);
-
-			if (l < p - 1) {
+			if (l < p - 1)
 				stack[++top] = p - 1;
-			}
-			if (p + 1 < h) {
+			if (p + 1 < h)
 				stack[++top] = h;
-			}
 		}
 	}
 }
