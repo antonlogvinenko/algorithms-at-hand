@@ -45,7 +45,7 @@ public class AllSortsOfSorts {
 
 	public static void main(String[] args) {
 		Random rand = new Random(currentTimeMillis());
-		int length = 1000;
+		int length = 100;
 
 		Stream<SortAlgorithm> ss = sortsAlgorithms.stream().map(x -> {
 			try {
@@ -56,7 +56,7 @@ public class AllSortsOfSorts {
 		});
 
 		ss.forEach(algorithm -> {
-			for (int i = 0; i < 1000; i++) {
+			for (int i = 0; i < 100; i++) {
 				int[] unsorted = rand.ints().limit(length).toArray();
 				algorithm.sort(unsorted);
 				validate(unsorted);

@@ -1,5 +1,8 @@
 package anton.logvinenko.sorting;
 
+/**
+ * No comments
+ */
 public class BubbleSort extends SortAlgorithm {
 
 	@Override

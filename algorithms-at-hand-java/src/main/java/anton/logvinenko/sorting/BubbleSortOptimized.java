@@ -2,6 +2,10 @@ package anton.logvinenko.sorting;
 
 import static java.lang.Math.max;
 
+/**
+ * On each step, store the index where the first swap was made.
+ * The next step starts before that index.
+ */
 public class BubbleSortOptimized extends SortAlgorithm {
 
 	@Override
@@ -22,5 +26,3 @@ public class BubbleSortOptimized extends SortAlgorithm {
 		}
 	}
 }
-
-// 1 2 3 0 4 5 6 -1
