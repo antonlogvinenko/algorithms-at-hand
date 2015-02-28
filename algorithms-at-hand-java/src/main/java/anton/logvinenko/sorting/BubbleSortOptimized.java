@@ -3,8 +3,7 @@ package anton.logvinenko.sorting;
 import static java.lang.Math.max;
 
 /**
- * On each step, store the index where the first swap was made.
- * The next step starts before that index.
+ * Just for lulz
  */
 public class BubbleSortOptimized extends SortAlgorithm {
 
