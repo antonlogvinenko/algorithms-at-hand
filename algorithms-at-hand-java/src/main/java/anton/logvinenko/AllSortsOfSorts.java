@@ -19,13 +19,16 @@ import static java.lang.System.currentTimeMillis;
 public class AllSortsOfSorts {
 
 	private static final List<Class<? extends SortAlgorithm>> sortsAlgorithms =
-		new ArrayList<>();
+			new ArrayList<>();
 
 	static {
 		sortsAlgorithms.add(InsertionSort.class);
 		sortsAlgorithms.add(SelectionSort.class);
 		sortsAlgorithms.add(ShellSort.class);
-		sortsAlgorithms.add(BubbleSortOptimized.class);
+		sortsAlgorithms.add(BubbleSortOptimization1.class);
+		sortsAlgorithms.add(BubbleSortOptimization2.class);
+		sortsAlgorithms.add(BubbleSortOptimization2Generalized.class);
+		sortsAlgorithms.add(BubbleSortAllOptimizations.class);
 		sortsAlgorithms.add(BubbleSort.class);
 		sortsAlgorithms.add(QuickSort.class);
 		sortsAlgorithms.add(QuickSortShort.class);
@@ -38,14 +41,15 @@ public class AllSortsOfSorts {
 		}
 	}
 
-	private static void validate(int[] array) {
+	private static boolean validate(int[] array) {
 		int last = MIN_VALUE;
 		for (int i = 0; i < array.length; i++) {
 			if (array[i] < last) {
-				throw new RuntimeException(format("Array is not sorted at index %s", i));
+				return false;
 			}
 			last = array[i];
 		}
+		return true;
 	}
 
 	public static void main(String[] args) {
@@ -61,11 +65,15 @@ public class AllSortsOfSorts {
 		});
 
 		ss.forEach(algorithm -> {
+			boolean passed = true;
 			for (int i = 0; i < 100; i++) {
 				int[] unsorted = rand.ints().limit(length).toArray();
 				algorithm.sort(unsorted);
 				validate(unsorted);
+				passed = passed && validate(unsorted);
+				if (!passed) break;
 			}
+			System.out.println(String.format("%s\t\t%s", algorithm.getClass().getSimpleName(), passed ? "passed" : "failed"));
 		});
 	}
 }
